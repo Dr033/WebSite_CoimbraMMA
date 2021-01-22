@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Coimbra MMA - Formulário-</title>
+	<link rel="icon" href="./img/titulo.jpg" >
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+     <div class="menu-container">
+  
+  <ul class="menu clearfix">
+    <li><a href="./Coimbra MMA.html"><img src="./img/logo.png" class="cover"></a></li>
+    <nav class="menus-direita">
+    
+    <li><a href="./areasocio.html">Área de Sócio</a></li>
+    <li><a href="./suporte.html">Suporte</a></li>
+    <li>
+      
+      <a href="./modalidades.html">Modalidades</a>
+      
+      <ul class="sub-menu clearfix">
+        <li><a href="jiujitsu.html">Jiu-Jitsu Brasileiro</a></li>
+        <li><a href="jiujitsuInf.html">Jiu-Jitsu Brasileiro Infantil</a></li>
+        <li><a href="mma.html">Mixed Martial Arts</a></li>
+        <li><a href="muaythai.html">Muay Thai</a></li>
+        <li><a href="sub.html">Submission</a></li>
+        <li><a href="boxe.html">Boxe</a></li>
+        <li><a href="boxefem.html">Boxe Feminino</a></li>
+        <li><a href="capoeira.html">Capoeira</a></li>
+        <li><a href="powerfit.html">Power Fit</a></li>
+        <li><a href="ioga.html">Pilates e Ioga</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="./clube.html">Clube</a></li>
+    <li><a href="./Coimbra MMA.html">Home</a></li>
+</nav>
+  </ul>
+</div> 
+    
+    <div class="container">
+    
+        <div id="content">
+        	<h1>Formulário</h1>
+
+
+        <form action="mailto:xxxx@xxx.com" o method="post" name="formulario" id="form"><fieldset>
+			<p>Nome: <br><input  name="nome" required size="20" type="text" autofocus="" placeholder="Introduza o seu nome" /></p>
+			<p>Email: <br><input name="email" required type="email" autofocus="" placeholder="Introduza o seu email" /></p>
+			<p>Número para contacto: <br><input name="numero" type="text" pattern="[0-9]{9}" autofocus="" placeholder="Introduza o seu numero" required /></p>
+            <p>Sexo:<input class="radio" type="radio" name="sexo" value="rapaz" />Rapaz
+            <input class="radio" type="radio" name="sexo" value="rapariga" />Rapariga</p><br>
+            <p>Motivo de contacto:
+            <form name="myform">
+                <table>
+                    <tr>
+                        <td>
+                            <select name="one" onchange="if (this.value=='other'){this.form['other'].style.visibility='visible'}else {this.form['other'].style.visibility='hidden'};" required>
+                                <option value="" selected="selected">Selecione uma das opções</option>
+                                <option value="1">Adesão de novos sócios</option>
+                                <option value="2">Atividades do clube</option>
+                                <option value="other">Outras questões</option>
+                            </select>
+                            <input type="textbox" name="other" style="visibility:hidden;"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            </p>
+			<p>Pergunte aqui:</p>
+			<p><textarea style="width: 400px; height: 100px;" name="perguntas" required="" autofocus="" placeholder="Introduza as suas perguntas aqui"></textarea></p>
+			<p><input name="reset" type="reset" value="Limpar" /> <input name="Submeter" type="submit" value="submeter" onclick="alerta()"/></p>
+
+        </fieldset>
+		</form>
+
+	</div>
+    </div>
+   
+</body>
+</html>
